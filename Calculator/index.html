@@ -1,0 +1,63 @@
+$<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    
+        <div>
+            <div class="bgContainer" align="center" id="calculator">
+                <input id="display" readonly>
+                <div class="fixed-bottom">
+                    <div id="keys">
+                        <button onclick="clearDispaly()" class="operator-btn1 firstrow"> AC </button>
+                        <button onclick="appendToDisplay('%')" class="operator-btn1 firstrow"> % </button>
+                        <button onclick="clearOne()" class="operator-btn1 firstrow"> <i class="fa-solid fa-delete-left"></i></button>
+                        <button onclick="appendToDisplay('/')" class="operator-btn1 firstrow"> / </button>
+                    </div>
+    
+                    <div id="keys">
+                        <button onclick="appendToDisplay('7')"> 7 </button>
+                        <button onclick="appendToDisplay('8')"> 8 </button>
+                        <button onclick="appendToDisplay('9')"> 9 </button>
+                        <button onclick="appendToDisplay('*')" class="operator-btn"> X </button>
+                    </div>
+    
+                    <div id="keys">
+                        <button onclick="appendToDisplay('4')"> 4 </button>
+                        <button onclick="appendToDisplay('5')"> 5 </button>
+                        <button onclick="appendToDisplay('6')"> 6 </button>
+                        <button onclick="appendToDisplay('-')" class="operator-btn"> - </button>
+                    </div>
+                    <div id="keys">
+                        <button onclick="appendToDisplay('1')"> 1 </button>
+                        <button onclick="appendToDisplay('2')"> 2 </button>
+                        <button onclick="appendToDisplay('3')"> 3 </button>
+                        <button onclick="appendToDisplay('+')" class="operator-btn"> + </button>
+                    </div>
+    
+                    <div id="last">
+                        <button onclick="appendToDisplay('0')" class="zeroNum"> 0 </button>
+                        <button onclick="appendToDisplay('.')"> . </button>
+                        <button onclick="calculate()">=</button>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="main.js"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
